@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-      <link rel="icon" href="/favicon-32x32.png" type="image/x-icon" />
+      <link rel="icon" href="/public/favicon-32x32.png" type="image/x-icon" />
        </Head>
       <body className={robotoSlab.className}>{children}</body>
     </html>

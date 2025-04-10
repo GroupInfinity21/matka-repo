@@ -9,6 +9,7 @@ export interface TravelCardProps {
   address: string;
   duration: string;
   className?: string;
+  onClose?: () => any;
 }
 
 const TravelCard = ({
@@ -19,7 +20,6 @@ const TravelCard = ({
   duration,
   className,
 }: TravelCardProps) => {
-  // Parse the duration string to extract numbers
   const durInfo = duration.match(/(\d+)\s+camas,\s+(\d+)\s+banheiro,\s+(\d+)\s+visitante/);
   const beds = durInfo ? durInfo[1] : "0";
   const baths = durInfo ? durInfo[2] : "0";
@@ -65,7 +65,7 @@ const TravelCard = ({
                 </div>
               </div>
               
-              <div className="bg-[#ba22ef]/10 rounded-full py-1 px-3">
+              <div className="bg-[#6e2a43]/10 rounded-full py-1 px-3">
                 <span className="text-xs font-medium text-[##c23c6e]">Disponível</span>
               </div>
             </div>
