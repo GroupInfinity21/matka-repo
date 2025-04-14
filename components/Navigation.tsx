@@ -40,22 +40,21 @@ export function Navigation() {
             </Link>
             
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="#" className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
+              <Link href="#tab" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
                 Semanas Matka
               </Link>
-              <Link href="#" className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
+              <Link href="#tab" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
               Aéreo e Diárias avulsas
               </Link>
-              <Link href="#" className=" text-[#ff776b] hover:text-[#c23c6e] transition-colors">
+              <Link href="#duvidas" scroll={true} className=" text-[#ff776b] hover:text-[#c23c6e] transition-colors">
                 Dúvidas
               </Link>
-              <Link href="#" className="text-[#ff776b]  hover:text-[#c23c6e] transition-colors">
+              <Link href="#tab" scroll={true} className="text-[#ff776b]  hover:text-[#c23c6e] transition-colors">
                 trocas semanais
               </Link>
-              <Link href="#" className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
+              <Link href="#duvidas" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
                 Contato
               </Link>
-
             </div>
             
             <button 
@@ -79,32 +78,32 @@ export function Navigation() {
           >
             <div className="flex flex-col items-center justify-center h-full space-y-8">
               <Link 
-                href="#" 
+                href="#tab" scroll={true}
                 className="text-white text-2xl hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Destinos
+                Semanas Matka
               </Link>
               <Link 
-                href="#" 
+                href="#tab" scroll={true}
                 className="text-white text-2xl hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Hotéis
+                Aéreo e Diárias avulsas
               </Link>
               <Link 
-                href="#" 
+                href="#duvidas" scroll={true} 
                 className="text-white text-2xl hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Pacotes
+                Dúvidas
               </Link>
               <Link 
-                href="#" 
+               href="#duvidas" scroll={true} 
                 className="text-white text-2xl hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Contato
+                 Contato
               </Link>
             </div>
           </motion.div>

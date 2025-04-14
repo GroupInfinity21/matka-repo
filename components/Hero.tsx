@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -38,7 +39,12 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <button className="transition-colors bg-[linear-gradient(145deg,_rgba(255,119,107,1)_26%,_rgba(254,32,133,1)_100%)] text-white px-10 py-4 rounded-full text-lg font-semibold hover:opacity-90 hover:scale-105 transition-all transform">
-              Explorar Destinos
+            <Link 
+               href="#tab" scroll={true} 
+                className="text-white text-2xl hover:text-white transition-colors"
+              >
+                 Explorar Destinos
+              </Link>
             </button>
           </motion.div>
         </div>

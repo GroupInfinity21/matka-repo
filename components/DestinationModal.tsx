@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { TravelCardProps } from "./travelCardTemplate";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
-import { MapPin, Users, Bed, Bath, CalendarDays, CheckCircle2 } from "lucide-react";
+import { MapPin, Users, Bed, Bath, CheckCircle2 } from "lucide-react";
+import { FaWhatsapp } from 'react-icons/fa';
 
 
 interface DestinationModalProps {
@@ -108,9 +109,16 @@ export function DestinationModal ({ isOpen, onClose, destination }: DestinationM
     
                 <div className="pt-3 sm:pt-4 border-t border-gray-100">
                   <div className="mt-3 sm:mt-4 bg-[#c23c6e]/10 rounded-lg p-2 sm:p-3 text-center">
-                    <span className="text-xs sm:text-sm font-medium text-[#c23c6e]">
-                      {destination.price} - Reserve com antecedência para garantir os melhores preços
-                    </span>
+                    <a
+                                        href="https://wa.me/5511999999999?text=Olá%20quero%20saber%20mais"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center justify-center text-xs sm:text-sm font-medium text-[#c23c6e] hover:underline"
+                                      >
+                                        {destination.price} - Reserve com a gente agora.
+                                        <span className="ml-1 font-bold">Clique Aqui!</span>
+                                        <FaWhatsapp size={20} className="ml-1" color="#32CD32" />
+                                      </a>
                   </div>
                 </div>
               </div>

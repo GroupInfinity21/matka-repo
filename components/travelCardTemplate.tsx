@@ -9,24 +9,28 @@ export interface TravelCardProps {
   address: string;
   duration: string;
   className?: string;
+  type?: "semanas" | "diarias" | "voos";
   onClose?: () => any;
+  onClick?: () => any;
 }
 
-const TravelCard = ({
+const TravelCardTempalte = ({
   title,
   image,
   price,
   address,
   duration,
   className,
+  onClick
 }: TravelCardProps) => {
+
   const durInfo = duration.match(/(\d+)\s+camas,\s+(\d+)\s+banheiro,\s+(\d+)\s+visitante/);
   const beds = durInfo ? durInfo[1] : "0";
   const baths = durInfo ? durInfo[2] : "0";
   const guests = durInfo ? durInfo[3] : "0";
 
   return (
-    <Card className={cn("overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow duration-300", className)}>
+    <Card  onClick={onClick} className={cn("overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow duration-300", className)}>
       <div className="relative h-64 overflow-hidden">
         <div className="absolute top-4 right-4 bg-white/80 backdrop-blur-sm py-1 px-3 rounded-full z-10">
           <span className="text-[#c23c6e] font-bold">{price}</span>
@@ -76,4 +80,4 @@ const TravelCard = ({
   );
 };
 
-export default TravelCard;
+export default TravelCardTempalte;

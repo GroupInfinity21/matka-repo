@@ -117,8 +117,8 @@ export function PopularDestinations() {
             ))}
           </CarouselContent>
           <div className="flex justify-center mt-8 gap-2">
-            <CarouselPrevious className="relative inset-0 translate-y-0 h-10 w-10 rounded-full border border-[#ff776b] bg-white hover:bg-[#ff776b] hover:text-white transition-colors" />
-            <CarouselNext className="relative inset-0 translate-y-0 h-10 w-10 rounded-full border border-[#ff776b] bg-white hover:bg-[#ff776b] hover:text-white transition-colors" />
+            <CarouselPrevious className="relative inset-0 translate-y-0 h-10 w-10 rounded-full border border-[#6e2a43] bg-white hover:bg-[#ff776b] hover:text-white transition-colors" />
+            <CarouselNext className="relative inset-0 translate-y-0 h-10 w-10 rounded-full border border-[#6e2a43] bg-white hover:bg-[#ff776b] hover:text-white transition-colors" />
           </div>
         </Carousel>
       </div>
