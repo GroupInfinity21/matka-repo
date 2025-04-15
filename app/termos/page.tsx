@@ -1,5 +1,6 @@
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Page () {
   return (
@@ -10,14 +11,19 @@ export default function Page () {
             <NavigationMenuList>
               <NavigationMenuItem>
                
+                 <Link
+                 href={'/'}
+                 scroll={true}
+                 >
                   <span className="text-2xl font-bold text-[#9b87f5]">
-                    <Image
-                        src={'/MATLA LOGO VETOR 1.png'}
-                        width={120}
-                        height={120}
-                        alt={""}            
-                    />
-                </span>
+                      <Image
+                          src={'/MATLA LOGO VETOR 1.png'}
+                          width={120}
+                          height={120}
+                          alt={""}            
+                      />
+                    </span>
+                 </Link>
                
               </NavigationMenuItem>
             </NavigationMenuList>

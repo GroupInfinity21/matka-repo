@@ -21,7 +21,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-8 leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8 leading-tight"
           >
             Alugue sua semana de hospedagem com preço exclusivo em hotéis de luxo
           </motion.h1>
@@ -41,7 +41,7 @@ export function Hero() {
             <button className="transition-colors bg-[linear-gradient(145deg,_rgba(255,119,107,1)_26%,_rgba(254,32,133,1)_100%)] text-white px-10 py-4 rounded-full text-lg font-semibold hover:opacity-90 hover:scale-105 transition-all transform">
             <Link 
                href="#tab" scroll={true} 
-                className="text-white text-2xl hover:text-white transition-colors"
+                className="text-white text-1xl hover:text-white transition-colors"
               >
                  Explorar Destinos
               </Link>

@@ -26,10 +26,10 @@ export function Footer() {
           <div>
             <h3 className="text-white text-lg mb-4">Dúvidas</h3>
             <ul className="space-y-2">
-              <li><Link href="#" className="text-white hover:text-[#ff776a]">Sobre Nós</Link></li>
-              <li><Link href="#" className="text-white hover:text-[#ff776a]">Termos e Condições</Link></li>
-              <li><Link href="#" className="text-white hover:text-[#ff776a]">Política de Cancelamento</Link></li>
-              <li><Link href="#" className="text-white hover:text-[#ff776a]">Política de Privacidade</Link></li>
+              <li><Link href="/sobrenos" className="text-white hover:text-[#ff776a]">Sobre Nós</Link></li>
+              <li><Link href="/termos" className="text-white hover:text-[#ff776a]">Termos e Condições</Link></li>
+              <li><Link href="/cancelamento" className="text-white hover:text-[#ff776a]">Política de Cancelamento</Link></li>
+              <li><Link href="/privacidade" className="text-white hover:text-[#ff776a]">Política de Privacidade</Link></li>
             </ul>
           </div>
           

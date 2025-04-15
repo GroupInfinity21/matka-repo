@@ -1,9 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Roboto_Slab } from 'next/font/google'
+import { Poppins  } from 'next/font/google'
 import Head from 'next/head';
 
-const robotoSlab = Roboto_Slab({
+const robotoSlab = Poppins({
   subsets: ['latin'],
   weight: ['400', '700'], 
 })
