@@ -39,7 +39,7 @@ export function OfferModal ({ isOpen, onClose, offer }: DestinationModalProps){
                   ))}
                 </CarouselContent>
                 <div className="absolute top-4 left-4 bg-white/80 backdrop-blur-sm py-2 px-4 rounded-full z-10">
-                  <span className="text-[#c23c6e] font-bold text-lg">{offer.discountedPrice}</span>
+                  <span className="text-[#c23c6e] font-bold text-sm md:text-lg">{offer.discountedPrice}</span>
                 </div>
               </Carousel>
             </div>
@@ -87,7 +87,7 @@ export function OfferModal ({ isOpen, onClose, offer }: DestinationModalProps){
                       asChild
                     >
                       <a
-                        href="https://wa.me/5511999999999?text=Olá%20quero%20saber%20mais"
+                        href="https://wa.me/558394008989?text=Olá%20quero%20saber%20mais"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

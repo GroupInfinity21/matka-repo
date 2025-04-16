@@ -36,14 +36,10 @@ const OfferCard = ({
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        
-        {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-        
-        {/* Destination on image */}
-        <div className="absolute bottom-3 left-3 text-white">
-          <p className="text-sm font-medium">{destination}</p>
-        </div>
+          <div className="absolute bottom-3 left-3 text-white">
+            <p className="text-sm font-medium">{destination}</p>
+          </div>
       </div>
 
       <CardContent className="p-5">

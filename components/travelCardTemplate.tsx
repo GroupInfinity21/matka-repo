@@ -1,83 +1,74 @@
-import { MapPin, Users, Bed, Bath } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
 
-export interface TravelCardProps {
-  title: string;
+import React from "react";
+import { cn } from "@/lib/utils";
+import { Card } from "@/components/ui/card";
+import { MapPin, MessageSquare } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export interface DestinationCardProps {
+  id: string;
   image: string;
-  price: string;
-  address: string;
-  duration: string;
+  title: string;
+  location: string;
+  onClick?: () => void;
   className?: string;
-  type?: "semanas" | "diarias" | "voos";
-  onClose?: () => any;
-  onClick?: () => any;
 }
 
-const TravelCardTempalte = ({
-  title,
+const DestinationCard = ({
   image,
-  price,
-  address,
-  duration,
-  className,
-  onClick
-}: TravelCardProps) => {
-
-  const durInfo = duration.match(/(\d+)\s+camas,\s+(\d+)\s+banheiro,\s+(\d+)\s+visitante/);
-  const beds = durInfo ? durInfo[1] : "0";
-  const baths = durInfo ? durInfo[2] : "0";
-  const guests = durInfo ? durInfo[3] : "0";
+  title,
+  location,
+  onClick,
+  className
+}: DestinationCardProps) => {
+  
+  const handleWhatsAppRedirect = (event: React.MouseEvent) => {
+    event.stopPropagation(); 
+    const message = `Olá, gostaria de mais informações sobre o destino: ${location}`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/5500000000000?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
 
   return (
-    <Card  onClick={onClick} className={cn("overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow duration-300", className)}>
-      <div className="relative h-64 overflow-hidden">
-        <div className="absolute top-4 right-4 bg-white/80 backdrop-blur-sm py-1 px-3 rounded-full z-10">
-          <span className="text-[#c23c6e] font-bold">{price}</span>
-        </div>
+    <Card
+      onClick={onClick}
+      className={cn(
+        "overflow-hidden rounded-xl border-none group cursor-pointer shadow-md hover:shadow-xl relative",
+        className
+      )}
+    >
+      
+      <div className="h-80 overflow-hidden relative">
         <img
           src={image}
-          alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          alt={location}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-      </div>
-
-      <CardContent className="p-5">
-        <div className="space-y-4">
-          <div>
-            <h3 className="font-bold text-xl text-[#1A1F2C] mb-1">{title}</h3>
-            <div className="flex items-center text-sm text-gray-500">
-              <MapPin className="w-4 h-4 text-[#c23c6e] mr-1 flex-shrink-0" />
-              <span className="truncate">{address}</span>
+        
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+        
+        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+          <div className="flex items-center space-x-2 opacity-90 mb-4">
+            <div className="bg-white/20 backdrop-blur-sm rounded-full p-1.5">
+              <MapPin className="w-4 h-4 text-white" />
             </div>
+            <span className="text-sm font-medium drop-shadow-md">{location}</span>
           </div>
-
-          <div className="border-t border-gray-100 pt-4">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="flex items-center">
-                  <Bed className="w-4 h-4 text-[#c23c6e] mr-1" />
-                  <span className="text-xs">{beds}</span>
-                </div>
-                <div className="flex items-center">
-                  <Bath className="w-4 h-4 text-[#c23c6e] mr-1" />
-                  <span className="text-xs">{baths}</span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="w-4 h-4 text-[#c23c6e] mr-1" />
-                  <span className="text-xs">{guests}</span>
-                </div>
-              </div>
-              
-              <div className="bg-[#6e2a43]/10 rounded-full py-1 px-3">
-                <span className="text-xs font-medium text-[##c23c6e]">Disponível</span>
-              </div>
-            </div>
-          </div>
+          
+          <Button 
+            variant="secondary" 
+            size="sm"
+            className="bg-[#6e2a43] text-white w-full flex items-center justify-center gap-2 mt-2"
+            onClick={handleWhatsAppRedirect}
+          >
+            <MessageSquare className="w-4 h-4" /> 
+            Veja mais detalhes
+          </Button>
         </div>
-      </CardContent>
+      </div>
     </Card>
   );
 };
 
-export default TravelCardTempalte;
+export default DestinationCard;
