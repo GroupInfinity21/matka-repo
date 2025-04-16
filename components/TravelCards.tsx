@@ -45,11 +45,11 @@ const TravelCards = () => {
             <TabsList>
               <TabsTrigger value="nacionais" className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>Nacionais</span>
+                <span>Semanas Matka</span>
               </TabsTrigger>
               <TabsTrigger value="internacionais" className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>Internacionais</span>
+                <span>Aéreo e Diárias avulsas</span>
               </TabsTrigger>
             </TabsList>
           </div>

@@ -49,6 +49,7 @@ const DestinationCard = ({
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
         
         <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+        <h3 className="text-lg font-semibold drop-shadow-md">{title}</h3>
           <div className="flex items-center space-x-2 opacity-90 mb-4">
             <div className="bg-white/20 backdrop-blur-sm rounded-full p-1.5">
               <MapPin className="w-4 h-4 text-white" />

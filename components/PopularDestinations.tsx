@@ -15,28 +15,28 @@ import { MapPin, Star, Heart } from "lucide-react";
 
 const popularDestinations = [
   {
-    title: "Santorini, Grécia",
-    image: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    title: "João pessoa, PB",
+    image: "https://img.freepik.com/fotos-premium/casas-coloridas-da-praca-antenor-navarro-no-centro-historico-de-joao-pessoa-joao-pessoa-paraiba-brasil_1190779-309.jpg?w=996",
     
   },
   {
-    title: "Bora Bora, Polinésia Francesa",
-    image: "https://images.unsplash.com/photo-1598901847919-b95dd0fabbb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    title: "Rio de Janeiro, RJ",
+    image: "https://img.freepik.com/fotos-gratis/bondinho-do-pao-de-acucar-durante-o-por-do-sol_181624-36743.jpg?t=st=1744834305~exp=1744837905~hmac=89ccf6fa45aed8b972b5cc995e69214a24aeb43cef1473fecf3ce15249a51803&w=740",
     
   },
   {
-    title: "Tóquio, Japão",
-    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80",
+    title: "Porto Seguro, BA",
+    image: "https://hoteisquintadosol.com/wp-content/uploads/2021/04/praias-mais-bonitas-litoral-baiano.jpg",
     
   },
   {
-    title: "Veneza, Itália",
-    image: "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    title: "Olímpia, SP",
+    image: "https://cdn.blablacar.com/wp-content/uploads/br/2024/05/05094127/olimpia-sp.webp",
    
   },
   {
-    title: "Paris, França",
-    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80",
+    title: "Orlando, EUA",
+    image: "https://lirp.cdn-website.com/e650cfd8/dms3rep/multi/opt/thumb_orlando-1920w.png",
    
   },
 ];

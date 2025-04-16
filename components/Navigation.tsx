@@ -46,7 +46,7 @@ export function Navigation() {
               <Link href="#tab" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
               Aéreo e Diárias avulsas
               </Link>
-              <Link href="#tab" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
+              <Link href="#ofertas" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
               ofertas
               </Link>
               <Link href="#duvidas" scroll={true} className=" text-[#ff776b] hover:text-[#c23c6e] transition-colors">
@@ -95,7 +95,7 @@ export function Navigation() {
                 Aéreo e Diárias avulsas
               </Link>
               <Link 
-                href="#tab" scroll={true}
+                href="#ofertas" scroll={true}
                 className="text-white text-2xl hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

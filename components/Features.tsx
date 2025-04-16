@@ -30,7 +30,7 @@ const features = [
 
 export function Features() {
   return (
-    <section className="py-24">
+    <section className="pb-[96px]">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center mb-16">
           <Badge variant="outline" className="px-4 py-1 mb-4 bg-white shadow-sm font-medium text-[#6e2a43]">

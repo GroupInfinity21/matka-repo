@@ -50,7 +50,7 @@ const OffersSection = () => {
   };
 
   return (
-    <div id="offers" className="py-16 px-4">
+    <div id="ofertas" className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <motion.div
