@@ -1,13 +1,13 @@
 import { useEffect } from "react";
-import { TravelCardProps } from "./travelCardTemplate";
+import  DestinationCardProps  from "./travelCardTemplate";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { MapPin, Users, Bed, Bath, CheckCircle2 } from "lucide-react";
 import { FaWhatsapp } from 'react-icons/fa';
-import { Offer } from "./offerSection";
 import { Calendar } from "lucide-react";
 import { Button } from "./ui/button";
 import { Clock } from "lucide-react";
+import { Offer } from "@/data/Offers";
 
 
 interface DestinationModalProps {
