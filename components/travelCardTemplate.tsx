@@ -26,7 +26,7 @@ const DestinationCard = ({
     event.stopPropagation(); 
     const message = `Olá, gostaria de mais informações sobre o destino: ${location}`;
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/5500000000000?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/558394008989?text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
   };
 
