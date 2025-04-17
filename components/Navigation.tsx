@@ -52,9 +52,6 @@ export function Navigation() {
               <Link href="#duvidas" scroll={true} className=" text-[#ff776b] hover:text-[#c23c6e] transition-colors">
                 Dúvidas
               </Link>
-              <Link href="#tab" scroll={true} className="text-[#ff776b]  hover:text-[#c23c6e] transition-colors">
-                trocas semanais
-              </Link>
               <Link href="#duvidas" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
                 Contato
               </Link>
