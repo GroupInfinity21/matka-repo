@@ -1,7 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Poppins  } from 'next/font/google'
-import Head from 'next/head';
 
 const robotoSlab = Poppins({
   subsets: ['latin'],
@@ -10,6 +9,7 @@ const robotoSlab = Poppins({
 
 export const metadata: Metadata = {
   title: 'Matka',
+  description: 'Escolha o seu melhor destino e nós cuidamos da sua experiência'
 };
 
 export default function RootLayout({
@@ -19,9 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html className="scroll-smooth" lang="en">
-      <Head>
-      <link rel="icon" href="/public/favicon-32x32.png" type="image/x-icon" />
-       </Head>
+      <head>
+        <link rel="icon" href="/favicon-32x32.png" type="image/x-icon" />
+       </head>
       <body className={robotoSlab.className}>{children}</body>
     </html>
   );

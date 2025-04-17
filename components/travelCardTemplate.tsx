@@ -40,6 +40,7 @@ const DestinationCard = ({
     >
       
       <div className="h-80 overflow-hidden relative">
+        
         <img
           src={image}
           alt={location}

@@ -44,10 +44,10 @@ export function Navigation() {
                 Semanas Matka
               </Link>
               <Link href="#tab" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
-              Aéreo e Diárias avulsas
+                Aéreo e Diárias avulsas
               </Link>
               <Link href="#ofertas" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
-              ofertas
+                ofertas
               </Link>
               <Link href="#duvidas" scroll={true} className=" text-[#ff776b] hover:text-[#c23c6e] transition-colors">
                 Dúvidas
