@@ -59,6 +59,7 @@ export function Navigation() {
             
             <button 
               className="md:hidden text-white p-2"
+              aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? <X /> : <Menu />}
