@@ -96,7 +96,7 @@ export function Navigation() {
                 className="text-white text-2xl hover:text-primary transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                ofertas
+                Ofertas
               </Link>
               <Link 
                 href="#duvidas" scroll={true} 
