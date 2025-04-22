@@ -17,14 +17,9 @@ export function Hero() {
       
       <div className="relative h-full flex items-center justify-center px-4">
         <div className="text-center max-w-5xl">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8 leading-tight"
-          >
-            Alugue sua semana de hospedagem com preço exclusivo em hotéis de luxo
-          </motion.h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
+             Alugue sua semana de hospedagem com preço exclusivo em hotéis de luxo
+          </h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
