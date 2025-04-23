@@ -39,7 +39,7 @@ export function OfferModal ({ isOpen, onClose, offer }: DestinationModalProps){
                   ))}
                 </CarouselContent>
                 <div className="absolute top-4 left-4 bg-white/80 backdrop-blur-sm py-2 px-4 rounded-full z-10">
-                  <span className="text-[#c23c6e] font-bold text-sm md:text-lg">{offer.discountedPrice}</span>
+                  <span className="text-[#ff2085] font-bold text-sm md:text-lg">{offer.discountedPrice}</span>
                 </div>
               </Carousel>
             </div>
@@ -48,7 +48,7 @@ export function OfferModal ({ isOpen, onClose, offer }: DestinationModalProps){
               <DialogHeader>
                 <DialogTitle className="text-xl sm:text-2xl font-bold text-[#1A1F2C]">{offer.title}</DialogTitle>
                 <DialogDescription className="flex items-center text-sm text-gray-500 mt-1">
-                  <MapPin className="w-4 h-4 text-[#c23c6e] mr-1 flex-shrink-0" />
+                  <MapPin className="w-4 h-4 text-[#ff2085] mr-1 flex-shrink-0" />
                   <span className="text-xs sm:text-sm">{offer.destination}</span>
                 </DialogDescription>
               </DialogHeader>
@@ -56,7 +56,7 @@ export function OfferModal ({ isOpen, onClose, offer }: DestinationModalProps){
               <div className="mt-4 sm:mt-6 space-y-4 sm:space-y-6">
                 <div className="pt-3 sm:pt-4 border-t border-gray-100">
                     <h4 className="font-semibold text-base sm:text-lg mb-2 sm:mb-3 flex items-center">
-                      <Calendar className="w-4 h-4 text-[#c23c6e] mr-2" />
+                      <Calendar className="w-4 h-4 text-[#ff2085] mr-2" />
                       Datas Disponíveis
                     </h4>
                     <div className="text-sm text-gray-600 space-y-2">
@@ -72,7 +72,7 @@ export function OfferModal ({ isOpen, onClose, offer }: DestinationModalProps){
                
                   <div className="pt-3 sm:pt-4 border-t border-gray-100">
                     <h4 className="font-semibold text-base sm:text-lg mb-2 sm:mb-3 flex items-center">
-                      <Users className="w-4 h-4 text-[#c23c6e] mr-2" />
+                      <Users className="w-4 h-4 text-[#ff2085] mr-2" />
                       Capacidade
                     </h4>
                     <p className="text-sm text-gray-600">Acomoda até {offer.peoples}</p>
@@ -83,7 +83,7 @@ export function OfferModal ({ isOpen, onClose, offer }: DestinationModalProps){
                     <div className="text-center mb-3">
                     </div>
                     <Button 
-                      className="w-full bg-[#c23c6e] hover:bg-[#a8355f] flex items-center justify-center gap-2"
+                      className="w-full bg-[#ff2085]  flex items-center justify-center gap-2"
                       asChild
                     >
                       <a

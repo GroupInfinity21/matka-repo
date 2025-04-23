@@ -74,7 +74,7 @@ const TravelCards = () => {
                 <div className="col-span-full flex justify-center mt-6">
                   <button
                     onClick={() => loadMoreDestinations(tab as "nacionais" | "internacionais")}
-                    className="px-6 py-2 rounded-xl border-2 border-[#c23c6e] text-gray-950 hover:bg-[#b1325f] hover:text-white transition-all"
+                    className="px-6 py-2 rounded-xl border-2 border-[#ff2085] text-gray-950 hover:text-black transition-all"
                   >
                     Carregar mais
                   </button>

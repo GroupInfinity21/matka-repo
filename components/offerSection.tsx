@@ -59,8 +59,8 @@ const OffersSection = () => {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 bg-[#9b87f5]/10 px-4 py-1 rounded-full mb-4"
           >
-            <BadgePercent className="w-4 h-4 text-[#c23c6e]" />
-            <span className="text-sm font-medium text-[#c23c6e]">
+            <BadgePercent className="w-4 h-4 text-[#ff2085]" />
+            <span className="text-sm font-medium text-[#ff2085]">
               Ofertas por tempo limitado
             </span>
           </motion.div>
@@ -113,23 +113,23 @@ const OffersSection = () => {
                 <p className="text-gray-500 mb-6">{offer.destination}</p>
 
                 <div className="flex items-center mb-6">
-                  <span className="text-[#c23c6e] font-bold text-3xl">
+                  <span className="text-[#ff2085] font-bold text-3xl">
                     {offer.discountedPrice}
                   </span>
                 </div>
 
                 <div className="flex items-center text-sm text-gray-500 mb-8">
-                  <Clock className="w-4 h-4 text-[#9b87f5] mr-2" />
+                  <Clock className="w-4 h-4 text-[#ff2085] mr-2" />
                   <span>veja mais detalhes sobre as datas</span>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button className="bg-[#c23c6e] text-white" size="lg">
+                  <Button className="bg-[#ff2085] text-white" size="lg">
                     Reservar agora
                   </Button>
                   <Button
                     variant="outline"
-                    className="border-[#c23c6e] text-[#c23c6e]"
+                    className="border-[#ff2085] text-black"
                   >
                     Ver detalhes
                   </Button>
@@ -172,7 +172,7 @@ const OffersSection = () => {
                         [category]: prev[category] + 3,
                       }))
                     }
-                    className="px-6 py-2 rounded-xl border-2 border-[#c23c6e] text-gray-950 hover:bg-[#b1325f] hover:text-white transition-all"
+                    className="px-6 py-2 rounded-xl border-2 border-[#ff2085] text-gray-950  hover:text-black transition-all"
                   >
                     Carregar mais
                   </button>

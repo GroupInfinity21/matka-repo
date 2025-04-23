@@ -40,19 +40,19 @@ export function Navigation() {
             </Link>
             
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="#tab" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
+              <Link href="#tab" scroll={true} className="text-[#ff2085] transition-colors">
                 Semanas Matka
               </Link>
-              <Link href="#tab" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
+              <Link href="#tab" scroll={true} className="text-[#ff2085] transition-colors">
                 Aéreo e Diárias avulsas
               </Link>
-              <Link href="#ofertas" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
+              <Link href="#ofertas" scroll={true} className="text-[#ff2085] transition-colors">
                 ofertas
               </Link>
-              <Link href="#duvidas" scroll={true} className=" text-[#ff776b] hover:text-[#c23c6e] transition-colors">
+              <Link href="#duvidas" scroll={true} className=" text-[#ff2085] transition-colors">
                 Dúvidas
               </Link>
-              <Link href="#duvidas" scroll={true} className="text-[#ff776b] hover:text-[#c23c6e] transition-colors">
+              <Link href="#duvidas" scroll={true} className="text-[#ff2085] transition-colors">
                 Contato
               </Link>
             </div>

@@ -48,14 +48,14 @@ const OfferCard = ({
           <h3 className="font-semibold text-lg text-[#1A1F2C] line-clamp-1">{title}</h3>
   
             <div className="flex items-center mt-2">
-              <span className="text-[#c23c6e] font-semibold text-base">{discountedPrice}</span>
+              <span className="text-[#ff2085] font-semibold text-base">{discountedPrice}</span>
             </div>
           </div>
 
           <div className=" pt-2 border-t border-gray-100">
             <CardFooter className="p-3  border-t">
               <Button 
-                className="w-full bg-[#c23c6e] hover:bg-[#a8355f] text-white flex items-center justify-center"
+                className="w-full bg-[#ff2085]  text-white flex items-center justify-center"
               >
                 Ver Detalhes
                 <span className="ml-2">→</span>
