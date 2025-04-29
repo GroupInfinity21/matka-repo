@@ -32,7 +32,7 @@ export function Features() {
   return (
     <section className="pb-[96px]">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center mb-16">
+        <div className="flex flex-col items-center mt-16 mb-16">
           <Badge variant="outline" className="px-4 py-1 mb-4 bg-white shadow-sm font-medium text-[#ff2085]">
             Benefícios exclusivos
           </Badge>
@@ -51,7 +51,7 @@ export function Features() {
                 className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 group"
               >
                 <div className={`${feature.color} w-14 h-14 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className="w-7 h-7 text-white" stroke-width={1.5} />
+                  <Icon className="w-7 h-7 text-white" strokeWidth={1.5} />
                 </div>
                 
                 <h3 className="text-xl font-bold mb-3 text-[#1A1F2C] group-hover:text-[#ff2085] transition-colors duration-300">

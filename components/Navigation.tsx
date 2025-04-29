@@ -24,6 +24,7 @@ export function Navigation() {
         className={`fixed w-full z-50 transition-all duration-300 ${
           isScrolled ? "glass-effect py-2" : "bg-transparent py-4"
         }`}
+        style={{backgroundColor:'#ff2085'}}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
@@ -32,7 +33,7 @@ export function Navigation() {
               className="text-white font-bold text-2xl hover:text-primary transition-colors"
             >
               <Image
-                src={'/MATLA LOGO VETOR 1.png'}
+                src={'/logo matka brancapng.png'}
                 width={120}
                 height={120}
                 alt={""}            
@@ -40,20 +41,23 @@ export function Navigation() {
             </Link>
             
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="#tab" scroll={true} className="text-[#ff2085] transition-colors">
+              <Link href="#tab" scroll={true} className="text-white font-bold transition-colors">
                 Semanas Matka
               </Link>
-              <Link href="#tab" scroll={true} className="text-[#ff2085] transition-colors">
+              <Link href="#tab" scroll={true} className="text-white  font-bold  transition-colors">
                 Aéreo e Diárias avulsas
               </Link>
-              <Link href="#ofertas" scroll={true} className="text-[#ff2085] transition-colors">
-                ofertas
+              <Link href="#ofertas" scroll={true} className="text-white  font-bold  transition-colors">
+                Ofertas
               </Link>
-              <Link href="#duvidas" scroll={true} className=" text-[#ff2085] transition-colors">
+              <Link href="#duvidas" scroll={true} className=" text-white  font-bold  transition-colors">
                 Dúvidas
               </Link>
-              <Link href="#duvidas" scroll={true} className="text-[#ff2085] transition-colors">
+              <Link href="#duvidas" scroll={true} className="text-white  font-bold  transition-colors">
                 Contato
+              </Link>
+              <Link href="/sobrenos" scroll={true} className="text-white  font-bold  transition-colors">
+                Sobre nós
               </Link>
             </div>
             
@@ -112,6 +116,13 @@ export function Navigation() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                  Contato
+              </Link>
+              <Link 
+               href="/sobrenos" scroll={true} 
+                className="text-white text-2xl hover:text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Sobre nós
               </Link>
             </div>
           </motion.div>

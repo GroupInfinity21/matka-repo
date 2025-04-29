@@ -64,7 +64,7 @@ const DestinationCard = ({
             className="bg-[#ff2085] text-white w-full flex items-center justify-center gap-2 mt-2"
             onClick={handleWhatsAppRedirect}
           >
-            <MessageSquare className="w-4 h-4" /> 
+            <MessageSquare className="w-4 h-4 " /> 
             Veja mais detalhes
           </Button>
         </div>
