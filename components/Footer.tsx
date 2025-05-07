@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
-
+import MoblixWidget from "./MoblixWidget";
 
 
 export function Footer() {

@@ -20,6 +20,7 @@ import { HeroAreo } from "@/components/heroAereo";
 import OfferDayAereo from "@/components/offerDayAereo/page";
 import { Footer } from "@/components/Footer";
 import { CommunityOffers } from "@/components/communityOffers/page";
+import MoblixWidget from "@/components/MoblixWidget";
 
 // interface FlightSearchProps {
 //   onSearch: (searchParams: {
@@ -58,6 +59,7 @@ export default function Page ({}) {
         <HeroAreo/>
         <OfferDayAereo/>
         <CommunityOffers/>
+        <MoblixWidget/>
         <Footer/>
       </div>
         
